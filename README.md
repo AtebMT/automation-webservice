@@ -16,8 +16,8 @@ To get a JSON response, hit the greeting endpoint:
 
 You can link this container to other containers. e.g.:
 
-> `docker run -i -t --rm --link=GreetingService:GreetingEndpoint dangermike64/automation-webserver-tests gradle test`
+> `docker run -i -t --rm --link=GreetingService:GreetingEndpoint dangermike64/automation-test-ws gradle test`
 
-here we link to the name given to the greeting container (GreetingServer). GreetingEndpoint is host name add to the `dangermike64/automation-webserver-tests` containers etc/host file. (In this example, the container uses that endpoint to test the web service.)
+here we link to the name given to the greeting container (GreetingServer). GreetingEndpoint is host name add to the `dangermike64/automation-test-ws` containers etc/host file. (In this example, the container uses that endpoint to test the web service.)
 
 
